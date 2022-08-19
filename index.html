@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Pedido</title>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+    <link rel="preload" href="dance_heart.gif" as="image">
+</head>
+
+<body id="body">
+    <div class="container wow flipInX" id="container">
+        <span class="text-big wow bounce">Quer namorar comigo? </span>
+
+        <div class="buttons">
+            <button onclick="yesFunction()" id="sim" class="button wow tada">Sim &#128151;
+            </button>
+            <span id="btn_nao">
+                <button onclick="changePosition()" onmouseover="changePosition()" id="nao" class="button">
+                    Não 😥
+                </button>
+            </span>
+
+        </div>
+        <div class="texto">
+            <span id="msg"></span>
+        </div>
+    </div>
+
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script>new WOW().init();</script>
+
+
+
+    <script src=./script.js></script>
+</body>
+
+</html>
